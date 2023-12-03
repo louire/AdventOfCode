@@ -1,7 +1,5 @@
-use core::num;
-
 fn main() {
-    let input = vec!["2xjzgsjzfhzhm1",
+    let input = ["2xjzgsjzfhzhm1",
     "qhklfjd39rpjxhqtftwopfvrrj2eight",
     "95btwo",
     "lfsqldnf3onenplgfxdjzjjnpzfxnineseven",
@@ -1002,10 +1000,21 @@ fn main() {
     "sxfvfdkff8dvlmbdktsixmzpnxzmml2",
     "9lgmxktj1frxl"];
 
-    
-    for i in &input{
-        if(i == i)
-        println!("{}",i);
+    let mut x = 0;
+    for _i in input {
+        
+        println!("{}",input[x]);
+        
+
+        x = x+1;
     }
 
-}
+
+    let _first_num = "";
+    let _last_num = "";
+
+    //println!("First number: {:?}, Last number: {:?}", first_num, last_num);
+    println!("{}",input[1]);
+
+    }
+
