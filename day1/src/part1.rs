@@ -2,15 +2,15 @@ use std::fs::File;
 use std::io::{self, BufRead};
 use std::path::Path;
 
-pub fn part1() -> io::Result<()> {
+pub fn part1() {
     let path = Path::new("./input.txt");
-    let file = File::open(&path)?;
+    let file = File::open(&path).unwrap();
     let reader = io::BufReader::new(file);
 
     let mut total = 0;
 
     for line in reader.lines() {
-        let line = line?;
+        let line = line.unwrap();
 
         if let (Some(first_digit), Some(last_digit)) = (
             line.chars().find(|c| c.is_digit(10)),
@@ -24,6 +24,4 @@ pub fn part1() -> io::Result<()> {
     }
 
     println!("Total result for part 1 is: {}, ", total);
-
-    Ok(())
 }
