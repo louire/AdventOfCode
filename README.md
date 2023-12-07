@@ -4,7 +4,7 @@
 
 
 
-### Only with The Rust Programming Language:crab:
+### Only with The Rust Programming Language :crab:
 
 
 ### Unordered
